@@ -27,6 +27,13 @@
       })
   };
 
+  if(location.hash){
+    fetchPage(location.hash.substring(2));
+  }else{
+    fetchPage('welcome');
+  }
+
+
   </script>
 
   <!-- <h2>WEB</h2>
